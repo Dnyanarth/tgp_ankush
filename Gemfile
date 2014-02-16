@@ -6,8 +6,9 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'sqlite3'
-gem 'mysql2'
+#gem 'mysql2'
 gem 'execjs'
+gem "pg"
 gem 'therubyracer'
 gem 'cancan'
 # Gems used only for assets and not required
