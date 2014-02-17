@@ -22,7 +22,7 @@
 <% if signed_in? %>
 <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
 <% else %>
-<li><%= link_to "Sign in", signin_path %></li>
+
 <p><%= link_to "Sign up now!", signup_path %></p>
 
 <% end %>
