@@ -11,8 +11,9 @@
 
 <nav class="round">
 <ul>
-<li><%= link_to "Home", user_root_path %></li>
 <% if signed_in? %>
+<li><%= link_to "Home", user_root_path %></li>
+
 <li><%= link_to "Profile", current_user %></li>
 
 <% end %>
