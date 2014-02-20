@@ -1,0 +1,56 @@
+<h1>Listing locos</h1>
+
+<table border='1'>
+  <tr>
+    <th>Crew</th>
+    <th>Locono</th>
+    <th>Base</th>
+    <th>Train</th>
+    <th>Traintype</th>
+    <th>Load</th>
+    <th>Section</th>
+    <th>Kms</th>
+    <th>Dep</th>
+    <th>Arr</th>
+    <th>Coast</th>
+    <th>Coasthrs</th>
+    <th>Hault</th>
+    <th>Haulthrs</th>
+    <th>Kwhrun</th>
+    <th>Kwhhalt</th>
+    <th>Kwhgen</th>
+    <th>Kwhration</th>
+    <th colspan='3'>Action</th>
+    
+  </tr>
+
+<% @locos.each do |loco| %>
+  <tr>
+    <td><%= loco.crew_id %></td>
+    <td><%= loco.Locono %></td>
+    <td><%= loco.Base %></td>
+    <td><%= loco.Train %></td>
+    <td><%= loco.Traintype %></td>
+    <td><%= loco.Load %></td>
+    <td><%= loco.Section %></td>
+    <td><%= loco.KMS %></td>
+    <td><%= loco.Dep %></td>
+    <td><%= loco.Arr %></td>
+    <td><%= loco.Coast %></td>
+    <td><%= loco.Coasthrs %></td>
+    <td><%= loco.Hault %></td>
+    <td><%= loco.HaultHrs %></td>
+    <td><%= loco.kwhrun %></td>
+    <td><%= loco.Kwhhalt %></td>
+    <td><%= loco.Kwhgen %></td>
+    <td><%= loco.Kwhration %></td>
+    <td><%= link_to 'Show', loco %></td>
+    <td><%= link_to 'Edit', edit_loco_path(loco) %></td>
+    <td><%= link_to 'Destroy', loco, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Loco', new_loco_path %>

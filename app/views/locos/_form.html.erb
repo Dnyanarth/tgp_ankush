@@ -1,0 +1,89 @@
+<%= form_for(@loco) do |f| %>
+  <% if @loco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loco.errors.count, "error") %> prohibited this loco from being saved:</h2>
+
+      <ul>
+      <% @loco.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :crew_id %><br />
+    <%= f.number_field :crew_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Locono %><br />
+    <%= f.number_field :Locono %>
+  </div>
+  <div class="field">
+    <%= f.label :Base %><br />
+    <%= f.text_field :Base %>
+  </div>
+  <div class="field">
+    <%= f.label :Train %><br />
+    <%= f.text_field :Train %>
+  </div>
+  <div class="field">
+    <%= f.label :Traintype %><br />
+    <%= f.text_field :Traintype %>
+  </div>
+  <div class="field">
+    <%= f.label :Load %><br />
+    <%= f.number_field :Load %>
+  </div>
+  <div class="field">
+    <%= f.label :Section %><br />
+    <%= f.text_field :Section %>
+  </div>
+  <div class="field">
+    <%= f.label :KMS %><br />
+    <%= f.number_field :KMS %>
+  </div>
+  <div class="field">
+    <%= f.label :Dep %><br />
+    <%= f.datetime_select :Dep %>
+  </div>
+  <div class="field">
+    <%= f.label :Arr %><br />
+    <%= f.datetime_select :Arr %>
+  </div>
+  <div class="field">
+    <%= f.label :Coast %><br />
+    <%= f.number_field :Coast %>
+  </div>
+  <div class="field">
+    <%= f.label :Coasthrs %><br />
+    <%= f.number_field :Coasthrs %>
+  </div>
+  <div class="field">
+    <%= f.label :Hault %><br />
+    <%= f.number_field :Hault %>
+  </div>
+  <div class="field">
+    <%= f.label :HaultHrs %><br />
+    <%= f.number_field :HaultHrs %>
+  </div>
+  <div class="field">
+    <%= f.label :kwhrun %><br />
+    <%= f.number_field :kwhrun %>
+  </div>
+  <div class="field">
+    <%= f.label :Kwhhalt %><br />
+    <%= f.number_field :Kwhhalt %>
+  </div>
+  <div class="field">
+    <%= f.label :Kwhgen %><br />
+    <%= f.number_field :Kwhgen %>
+  </div>
+  <div class="field">
+    <%= f.label :Kwhration %><br />
+    <%= f.text_field :Kwhration %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

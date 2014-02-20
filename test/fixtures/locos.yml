@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  crew_id: 1
+  Locono: 1
+  Base: MyString
+  Train: MyString
+  Traintype: MyString
+  Load: 1
+  Section: MyString
+  KMS: 1
+  Dep: 2014-02-20 22:30:10
+  Arr: 2014-02-20 22:30:10
+  Coast: 1
+  Coasthrs: 1
+  Hault: 1
+  HaultHrs: 1
+  kwhrun: 1
+  Kwhhalt: 1
+  Kwhgen: 1
+  Kwhration: MyString
+
+two:
+  crew_id: 1
+  Locono: 1
+  Base: MyString
+  Train: MyString
+  Traintype: MyString
+  Load: 1
+  Section: MyString
+  KMS: 1
+  Dep: 2014-02-20 22:30:10
+  Arr: 2014-02-20 22:30:10
+  Coast: 1
+  Coasthrs: 1
+  Hault: 1
+  HaultHrs: 1
+  kwhrun: 1
+  Kwhhalt: 1
+  Kwhgen: 1
+  Kwhration: MyString

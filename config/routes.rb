@@ -1,5 +1,7 @@
 DemoCloud::Application.routes.draw do 
  
+  resources :locos
+
 get "password_resets/new"
 
 match '/change_password', :controller => 'users', :action => 'change_password'
@@ -15,11 +17,8 @@ match '/change_password', :controller => 'users', :action => 'change_password'
   match '/signout', :to =>'sessions#destroy'
  resources :password_resets
  
- match '/edu_class/:id/status', :to => "edu_classes#toggled_status"
- match '/edu_classes/:id/delete', :to => "edu_classes#destroy"
-  match '/subjects/:id/delete', :to => "subjects#destroy"
-
- resources :edu_classes 
+ resources :locos
+ 
  resources :subjects
   # The priority is based upon order of creation:
   # first created -> highest priority.
