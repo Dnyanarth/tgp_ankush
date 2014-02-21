@@ -44,7 +44,7 @@ class LocosController < ApplicationController
 
     respond_to do |format|
       if @loco.save
-        format.html { redirect_to @loco, notice: 'Loco was successfully created.' }
+        format.html { redirect_to locos_path, notice: 'Loco was successfully created.' }
         format.json { render json: @loco, status: :created, location: @loco }
       else
         format.html { render action: "new" }

@@ -10,7 +10,7 @@ match '/change_password', :controller => 'users', :action => 'change_password'
  
   resources :sessions, :only => [:new,:create,:destroy,:edit]
   root :to => 'sessions#new'
-  match 'dashboard' => 'users#dashboard', :as => 'user_root'
+  match 'dashboard' => 'locos#new', :as => 'user_root'
   match '/signup', :to =>'users#new'
   match '/signin', :to =>'sessions#new'
   match  '/users/:id/edit',  :to => "users#edit" 

@@ -10,80 +10,116 @@
       </ul>
     </div>
   <% end %>
+  <style>
+table
+{
+border:2px solid black;
+}
 
-  <div class="field">
-    <%= f.label :crew_id %><br />
-    <%= f.number_field :crew_id %>
-  </div>
-  <div class="field">
-    <%= f.label :Locono %><br />
-    <%= f.number_field :Locono %>
-  </div>
-  <div class="field">
-    <%= f.label :Base %><br />
-    <%= f.text_field :Base %>
-  </div>
-  <div class="field">
-    <%= f.label :Train %><br />
-    <%= f.text_field :Train %>
-  </div>
-  <div class="field">
-    <%= f.label :Traintype %><br />
-    <%= f.text_field :Traintype %>
-  </div>
-  <div class="field">
-    <%= f.label :Load %><br />
-    <%= f.number_field :Load %>
-  </div>
-  <div class="field">
-    <%= f.label :Section %><br />
-    <%= f.text_field :Section %>
-  </div>
-  <div class="field">
-    <%= f.label :KMS %><br />
-    <%= f.number_field :KMS %>
-  </div>
-  <div class="field">
-    <%= f.label :Dep %><br />
-    <%= f.datetime_select :Dep %>
-  </div>
-  <div class="field">
-    <%= f.label :Arr %><br />
-    <%= f.datetime_select :Arr %>
-  </div>
-  <div class="field">
-    <%= f.label :Coast %><br />
-    <%= f.number_field :Coast %>
-  </div>
-  <div class="field">
-    <%= f.label :Coasthrs %><br />
-    <%= f.number_field :Coasthrs %>
-  </div>
-  <div class="field">
-    <%= f.label :Hault %><br />
-    <%= f.number_field :Hault %>
-  </div>
-  <div class="field">
-    <%= f.label :HaultHrs %><br />
-    <%= f.number_field :HaultHrs %>
-  </div>
-  <div class="field">
-    <%= f.label :kwhrun %><br />
-    <%= f.number_field :kwhrun %>
-  </div>
-  <div class="field">
-    <%= f.label :Kwhhalt %><br />
-    <%= f.number_field :Kwhhalt %>
-  </div>
-  <div class="field">
-    <%= f.label :Kwhgen %><br />
-    <%= f.number_field :Kwhgen %>
-  </div>
-  <div class="field">
-    <%= f.label :Kwhration %><br />
-    <%= f.text_field :Kwhration %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+.tf {
+    background: url("/assets/tf_bg.jpg") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 70px;
+}
+.tf1 {
+    background: url("/assets/tf_bg.jpg") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 120px;
+}
+.btn:first-child {
+}
+.btn {
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    margin-bottom: 0;
+    padding: 10px 32px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+</style>
+
+<table>  
+
+<table>
+
+  <tr>
+   <td>  Loco Pilot</td>        
+    <td><%= f.number_field :crew_id ,:class=>'tf1'%></td>   
+    <td>Run Kwh</td>
+    <td><%= f.number_field :kwhrun,:class=>'tf1' %></td>
+  </tr>
+  <tr>
+     <td>Locono </td>
+    <td><%= f.number_field :Locono,:class=>'tf1' %> &nbsp;&nbsp;&nbsp;Base &nbsp;&nbsp;<%= f.text_field :Base,:class=>'tf' %> &nbsp;&nbsp;</td>
+      
+   <td>Halt Kwh</td>
+   <td> <%= f.number_field :Kwhhalt ,:class=>'tf1'%></td>
+  </tr>
+  
+  <tr>
+    <td>Train</td><br />
+    <td><%= f.text_field :Train ,:class=>'tf1'%> &nbsp;&nbsp;Load &nbsp;&nbsp;<%= f.number_field :Load ,:class=>'tf1'%>&nbsp;&nbsp;</td></td>
+     
+     <td>GenKwh</td>
+     <td><%= f.number_field :Kwhgen,:class=>'tf1' %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Traintype %></td><br />
+    <td><%= f.text_field :Traintype ,:class=>'tf1'%></td>
+     <td>Coasting KMS</td>
+     <td><%= f.number_field :KMS ,:class=>'tf1'%></td>
+  </tr>
+ 
+  <tr>
+    <td>Section</td>
+    <td><%= f.text_field :Section,:class=>'tf1' %></td>
+   <td>Coasting Time in Min</td>
+    <td><%= f.number_field :Coasthrs,:class=>'tf1' %></td>
+  
+  </tr>
+  <tr>
+   <td>Departure </td>
+   <td><%= f.datetime_select :Dep %></td>
+   <td>Hault </td>
+   <td><%= f.number_field :Hault ,:class=>'tf1'%></td>
+    </tr>
+  <tr>
+  <td>Arrival </td>    
+    <td><%= f.datetime_select :Arr %></td>
+    <td>Hault in Min </td>
+     <td><%= f.number_field :HaultHrs,:class=>'tf1' %></td>
+  </tr>  
+  </br>
+  </br>
+    <%#= f.label :Coast %>
+    <%#= f.number_field :Coast %>
+ 
+    <%#= f.label :Kwhration %>
+    <%#= f.text_field :Kwhration %>
+  
+  
+</table>
+<tr>
+</tr></br>
+ <tr>
+    <td><%= f.submit "Save",:class =>'btn' %></td> &nbsp;&nbsp;<td><%= link_to 'Back', locos_path,:class =>'btn' %></td>
+  </tr>
+  <% end %>
+
+</table>
