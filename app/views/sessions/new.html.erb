@@ -1,15 +1,96 @@
-<h1>Sign in</h1>
-<%= form_for(:session, :url => sessions_path) do |f| %>
-<div class="field">
-<%= f.label :email %><br />
-<%= f.text_field :email %>
-</div><br />
-<div class="field">
-<%= f.label :password %><br />
-<%= f.password_field :password %>
-</div><br />
-<div class="actions">
-<%= f.submit "Sign in" %>
-</div>
-<% end %>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TRO-CR-NGP</title>
+	
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+	<%= stylesheet_link_tag  'application','style.css' %>
+    <%= javascript_include_tag  "application"%>
+    <%= csrf_meta_tags %>
+
+	<!-- Optimize for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+</head>
+<body>
+
+	<!-- TOP BAR -->
+ <!-- end top-bar -->
+	
+	
+	
+	<!-- HEADER -->
+	<div id="header">
+		
+		<div class="page-full-width cf">
+	
+			<div id="login-intro" class="fl">
+			
+				<h1>TRO NGP</h1>
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+			
+			</div> <!-- login-intro -->
+			
+			<!-- Change this image to your own company's logo -->
+			<!-- The logo will automatically be resized to 39px height. -->
+			<a href="#" id="company-branding" class="fr" style = "height:152px;"><img src="/assets/company-logo.png" alt="Blue Hosting" /></a>
+			
+		</div> <!-- end full-width -->	
+
+	</div> <!-- end header -->
+	
+	
+	
+	<!-- MAIN CONTENT -->
+	<div id="content">
+	
+		<%= form_for(:session, :url => sessions_path,:html => {:id=>"login-form" } ) do |f| %>
+		
+			<fieldset>
+
+				<p>
+					<label for="login-username">Email</label>
+					
+					<%= f.text_field :email,:class=> "round full-width-input" %>
+				</p>
+
+				<p>
+					<label for="login-password">password</label>
+					
+					<%= f.password_field :password,:class=> "round full-width-input"  %>
+				</p>
+				
+				<%= f.submit "LOG IN",:class=>"button round blue image-right ic-right-arrow" %>
+				
+				
+
+			</fieldset>
+
+			
+
+
+		<% end %>
+		
+	</div> <!-- end content -->
+	
+	
+	
+	<!-- FOOTER -->
+	<div id="footer">
+
+		
+		<p><strong></strong> Projecties :- </p>
+	    <p><strong></strong> Ankush Khotpal</p>
+	    <p><strong></strong> Subhajyoti Basu</p>
+	    <p><strong></strong> Akshay Shende</p>
+	    <p><strong></strong> Pratik Shahare</p>
+	    <p><strong></strong> Nitesh Bajad</p>
+	</div> <!-- end footer -->
+
+</body>
+</html>
 
