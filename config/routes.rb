@@ -15,6 +15,7 @@ match '/change_password', :controller => 'users', :action => 'change_password'
   match '/signin', :to =>'sessions#new'
   match  '/users/:id/edit',  :to => "users#edit" 
   match '/signout', :to =>'sessions#destroy'
+  match '/locos/:id/delete', :to => "locos#destroy"
  resources :password_resets
  
  resources :locos

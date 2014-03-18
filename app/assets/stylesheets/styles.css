@@ -89,7 +89,7 @@ p {
 }
 
 div.stripe-separator {
-	background: transparent url('/assets//separator-bg.png') repeat-x left center;
+	background: transparent url('/assets/separator-bg.png') repeat-x left center;
 	height: 0.562em; /* 9/16 */
 	display: block;
 	margin: 1.25em 0; /* 20/16 */
@@ -237,44 +237,44 @@ p a, p a:hover { border-bottom: 1px dotted; }
 	padding-right: 3em; /* 36/12 */
 }
 
-.ic-left-arrow { background-image: url("/assets//icons/ic_left.png"); }
-.ic-right-arrow { background-image: url("/assets//icons/ic_right.png"); }
-.ic-print { background-image: url("/assets//icons/ic_print.png"); }
-.ic-cancel { background-image: url("/assets//icons/ic_cancel.png"); }
-.ic-delete { background-image: url("/assets//icons/ic_delete.png"); }
-.ic-add { background-image: url("/assets//icons/ic_add.png"); }
-.ic-download { background-image: url("/assets//icons/ic_download.png"); }
-.ic-edit { background-image: url("/assets//icons/ic_edit.png"); }
-.ic-favorite { background-image: url("/assets//icons/ic_favorite.png"); }
-.ic-lock { background-image: url("/assets//icons/ic_lock.png"); }
-.ic-power { background-image: url("/assets//icons/ic_power.png"); }
-.ic-refresh { background-image: url("/assets//icons/ic_refresh.png"); }
-.ic-settings { background-image: url("/assets//icons/ic_settings.png"); }
-.ic-upload { background-image: url("/assets//icons/ic_upload.png"); }
-.ic-search { background-image: url("/assets//icons/ic_zoom.png"); }
+.ic-left-arrow { background-image: url("/assets/icons/ic_left.png"); }
+.ic-right-arrow { background-image: url("/assets/icons/ic_right.png"); }
+.ic-print { background-image: url("/assets/icons/ic_print.png"); }
+.ic-cancel { background-image: url("/assets/icons/ic_cancel.png"); }
+.ic-delete { background-image: url("/assets/icons/ic_delete.png"); }
+.ic-add { background-image: url("/assets/icons/ic_add.png"); }
+.ic-download { background-image: url("/assets/icons/ic_download.png"); }
+.ic-edit { background-image: url("/assets/icons/ic_edit.png"); }
+.ic-favorite { background-image: url("/assets/icons/ic_favorite.png"); }
+.ic-lock { background-image: url("/assets/icons/ic_lock.png"); }
+.ic-power { background-image: url("/assets/icons/ic_power.png"); }
+.ic-refresh { background-image: url("/assets/icons/ic_refresh.png"); }
+.ic-settings { background-image: url("/assets/icons/ic_settings.png"); }
+.ic-upload { background-image: url("/assets/icons/ic_upload.png"); }
+.ic-search { background-image: url("/assets/icons/ic_zoom.png"); }
 
-.ic-table-edit { background-image: url("/assets//icons/table/actions-edit.png"); }
-.ic-table-delete { background-image: url("/assets//icons/table/actions-delete.png"); }
+.ic-table-edit { background-image: url("/assets/icons/table/actions-edit.png"); }
+.ic-table-delete { background-image: url("/assets/icons/table/actions-delete.png"); }
 
 
 
 
 
 /* ---------- MENU BUTTONS ---------- */
-.menu-email { background-image: url("/assets//icons/menu/menu-email.png"); }
-	.menu-email:hover { background-image: url("/assets//icons/menu/menu-email-over.png"); }
+.menu-email { background-image: url("/assets/icons/menu/menu-email.png"); }
+	.menu-email:hover { background-image: url("/assets/icons/menu/menu-email-over.png"); }
 	.menu-email-special {
-		background-image: url("/assets//icons/menu/menu-email-special.png");
+		background-image: url("/assets/icons/menu/menu-email-special.png");
 		color: #7fcdff;
 	}
 	
-.menu-settings { background-image: url("/assets//icons/menu/menu-settings.png"); }
-	.menu-settings:hover { background-image: url("/assets//icons/menu/menu-settings-over.png"); }
+.menu-settings { background-image: url("/assets/icons/menu/menu-settings.png"); }
+	.menu-settings:hover { background-image: url("/assets/icons/menu/menu-settings-over.png"); }
 
-.menu-logoff { background-image: url("/assets//icons/menu/menu-logoff.png"); }
-	.menu-logoff:hover { background-image: url("/assets//icons/menu/menu-logoff-over.png"); }
+.menu-logoff { background-image: url("/assets/icons/menu/menu-logoff.png"); }
+	.menu-logoff:hover { background-image: url("/assets/icons/menu/menu-logoff-over.png"); }
 
-.menu-user { background-image: url("/assets//icons/menu/menu-user.png"); }
+.menu-user { background-image: url("/assets/icons/menu/menu-user.png"); }
 
 
 
@@ -333,7 +333,7 @@ form p em {
 form p.form-error, form p.form-error label { color: #cf4425; }
 
 form p.form-error em {
-	background: transparent url('/assets//icons/message-boxes/error.png') no-repeat left center;
+	background: transparent url('/assets/icons/message-boxes/error.png') no-repeat left center;
 	padding-left: 2em; /* 24/12 */
 }
 
@@ -356,25 +356,25 @@ form input.error-input { border: 1px solid #ff876f; }
 }
 
 .information-box {
-	background: #e5f5f9 url('/assets//icons/message-boxes/information.png') no-repeat 0.833em center;
+	background: #e5f5f9 url('/assets/icons/message-boxes/information.png') no-repeat 0.833em center;
 	border: 1px solid #cae0e5;
 	color: #5a9bab;
 }
 
 .confirmation-box {
-	background: #e7fae6 url('/assets//icons/message-boxes/confirmation.png') no-repeat 0.833em center;
+	background: #e7fae6 url('/assets/icons/message-boxes/confirmation.png') no-repeat 0.833em center;
 	border: 1px solid #b7cbb6;
 	color: #52964f;
 }
 
 .error-box {
-	background: #fde8e4 url('/assets//icons/message-boxes/error.png') no-repeat 0.833em center;
+	background: #fde8e4 url('/assets/icons/message-boxes/error.png') no-repeat 0.833em center;
 	border: 1px solid #e6bbb3;
 	color: #cf4425;
 }
 
 .warning-box {
-	background: #fdf7e4 url('/assets//icons/message-boxes/warning.png') no-repeat 0.833em center;
+	background: #fdf7e4 url('/assets/icons/message-boxes/warning.png') no-repeat 0.833em center;
 	border: 1px solid #e5d9b2;
 	color: #b28a0b;
 }
@@ -418,7 +418,7 @@ ul#nav {
 			color: white;
 			padding: 0.833em 0 0.833em 3em;
 			border-top: 1px solid #6a7282;
-			background: #5d6677 url('/assets//menu-indicator.png') no-repeat right center;
+			background: #5d6677 url('/assets/menu-indicator.png') no-repeat right center;
 			display: block;
 			width: 100%;
 			white-space: nowrap;
@@ -449,7 +449,7 @@ div#header { padding: 1.25em 0; /* 20/16 */ }
 div#header-with-tabs { padding: 1.25em 0 0 0; /* 20/16 */ }
 
 div#login-intro {
-	background: transparent url('/assets//login-icon.png') no-repeat left center;
+	background: transparent url('/assets/login-icon.png') no-repeat left center;
 	padding: 2.312em 0 0.312em 5.125em;
 }
 	div#login-intro h1 { text-transform: uppercase; margin: 0.312em 0 0 0; }
@@ -478,7 +478,7 @@ ul#tabs { list-style-type: none; }
 			ul#tabs li a:hover { color: #2a2e36; }
 
 ul#tabs li a.dashboard-tab {
-	background: transparent url('/assets//tab-dashboard.png') no-repeat 0.833em center /* 10/12 */;
+	background: transparent url('/assets/tab-dashboard.png') no-repeat 0.833em center /* 10/12 */;
 	padding-left: 3em; /* 36/12 */	
 }
 
@@ -553,7 +553,7 @@ ol, .regular-ul, .custom-ul { margin-bottom: 1.25em; /* 20/16 */ }
 .custom-ul { list-style-type: none; }
 
 	.custom-ul li {
-		background: transparent url('/assets//menu-dark-indicator.png') no-repeat left center;
+		background: transparent url('/assets/menu-dark-indicator.png') no-repeat left center;
 		padding-left: 1.25em /* 10/12 */;
 	}
 
@@ -561,7 +561,7 @@ ol, .regular-ul, .custom-ul { margin-bottom: 1.25em; /* 20/16 */ }
 
 /* ---------- CONTENT ---------- */
 div#content {
-	background: #f8f9fa url('/assets//artwork-pattern.png') repeat-x left bottom;
+	background: #f8f9fa url('/assets/artwork-pattern.png') repeat-x left bottom;
 	border: 1px solid #eeefef;
 	padding: 1.875em 0; /* 30/16 */
 }
@@ -591,7 +591,7 @@ div.side-menu {
 			padding: 0.833em 1.25em; /* 10/12 15/12 */
 			border-top: 1px solid #f8f9fa;
 			display: block;
-			background: white url('/assets//menu-dark-indicator.png') no-repeat right center;
+			background: white url('/assets/menu-dark-indicator.png') no-repeat right center;
 		}
 			div.side-menu ul li a:hover {
 				background-color: #f8f9fa;
