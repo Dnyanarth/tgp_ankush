@@ -449,8 +449,8 @@ div#header { padding: 1.25em 0; /* 20/16 */ }
 div#header-with-tabs { padding: 1.25em 0 0 0; /* 20/16 */ }
 
 div#login-intro {
-	background: transparent url('/assets/login-icon.png') no-repeat left center;
-	padding: 2.312em 0 0.312em 5.125em;
+	background: transparent url('/assets/company-logo.png') no-repeat left center;
+	padding: 7.312em 4em 1.312em 5.125em;
 }
 	div#login-intro h1 { text-transform: uppercase; margin: 0.312em 0 0 0; }
 	div#login-intro h5 { color: #9498a1; }
