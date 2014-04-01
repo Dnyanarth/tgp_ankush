@@ -30,34 +30,15 @@ border:2px solid black;
     padding: 5px;
     width: 120px;
 }
-.btn:first-child {
-}
-.btn {
-    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
-    border-image: none;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-    color: #333333;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 17px;
-    margin-bottom: 0;
-    padding: 10px 32px;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    vertical-align: middle;
-    text-decoration: none;
+
 }
 
 </style>
 
 <table>  
 
-<table>
-
+<table style="width:56%;">
+<h1 style ="font-size: 2.125em">Trip Rotation Entry</h1>
   <tr>
    <td>  Loco Pilot</td>        
     <td><%= f.number_field :crew_id ,:class=>'tf1'%></td>   
@@ -118,7 +99,7 @@ border:2px solid black;
 <tr>
 </tr></br>
  <tr>
-    <td><%= f.submit "Save",:class =>'btn' %></td> &nbsp;&nbsp;<td><%= link_to 'Back', locos_path,:class =>'btn' %></td>
+    <td><%= link_to 'Back', locos_path,:class =>"round button dark ic-left-arrow image-left" %> </td> &nbsp;&nbsp;<td> <%= f.submit "Save",:class =>"round blue ic-right-arrow"%></td>
   </tr>
   <% end %>
 

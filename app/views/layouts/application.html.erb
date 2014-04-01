@@ -3,28 +3,34 @@
 <head>
 <title>Tgp Ankush</title>
 <%= csrf_meta_tag %>
-
+<%= stylesheet_link_tag  'application','styles.css' %>
+<%= javascript_include_tag  "application"%>
 </head>
-<body>
+<body >
+	<div id="top-bar">
+		
+		<div class="page-full-width cf">
 
+			<ul id="nav" class="fl">
+	
+				<li class="v-sep"><%= link_to "Home", user_root_path ,:class => "round button dark ic-left-arrow image-left" %></li>
+			
+			
+			<% if signed_in? %>	
+				<li><%= link_to "Log outt", signout_path, :method => :delete,:class =>"round button dark menu-logoff image-left" %></li>
+			<% end %>	
+			</ul> <!-- end nav -->
+
+					
+			
+
+		</div> <!-- end full-width -->	
+	
+	</div> <!-- end top-bar -->
 <header>
 
 <nav class="round">
 <ul>
-<% if signed_in? %>
-<li><%= link_to "Home", user_root_path %></li>
-
-<li><%= link_to "Profile", current_user %></li>
-
-<% end %>
-
-
-
-<% if signed_in? %>
-<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-<% else %>
-
-<% end %>
 
 </ul>
 </nav>
@@ -38,7 +44,15 @@
 <%= yield %>
 </center>
 </section>
-
-
+<div id="footer">
+        <p> <img src="/assets/logo.png" alt="TGP Cet" style="background:grey;" /></p>
+		
+		<p><strong></strong> Projecties :-
+	    <strong> Ankush Khotpal</strong>,
+	    <strong> Subhajyoti Basu</strong>,
+	    <strong> Akshay Shende</strong>,
+	    <strong> Pratik Shahare</strong>,
+	    <strong> Nitesh Bajad</strong></p>
+	</div> 
 </body>
 </html>

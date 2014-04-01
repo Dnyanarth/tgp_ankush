@@ -1,4 +1,5 @@
 <h1>Listing locos</h1>
+<div><%= link_to 'New Loco', new_loco_path ,:class => "button round blue image-right ic-add text-upper" ,:style=> "float:right;margin-top:20px;"%></div>
 
 <table border='1'>
   <tr>
@@ -15,11 +16,11 @@
     <th>Coast</th>
     <th>Total Kms</th>
     <th>Hault</th>
-    <th>Haulthrs</th>
-    <th>Kwhrun</th>
-    <th>Kwhhalt</th>
-    <th>Kwhgen</th>
-    <th>Kwhration</th>
+    <th>Hault hrs</th>
+    <th>Kwh run</th>
+    <th>Kwh halt</th>
+    <th>Kwh gen</th>
+    <th>Kwh ration</th>
     <th colspan='3'>Action</th>
     
   </tr>
@@ -45,12 +46,15 @@
     <td><%= loco.Kwhgen %></td>
     <td><%= loco.Kwhration %></td>
     <td><%= link_to 'Show', loco %></td>
-    <td><%= link_to 'Edit', edit_loco_path(loco) %></td>
-    <td><a href="/locos/<%= loco.id %>/delete" onclick="if(confirm('Are you sure you want to delete this loco?'))  return true;  else  return  false;" >Delete</a></td>
+    <td><%= link_to '', edit_loco_path(loco),:class => "table-actions-button ic-table-edit" %></td>
+    <td><a href="/locos/<%= loco.id %>/delete" onclick="if(confirm('Are you sure you want to delete this loco?'))  return true;  else  return  false;" class="table-actions-button ic-table-delete" ></a></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Loco', new_loco_path %>
+
+
+
+

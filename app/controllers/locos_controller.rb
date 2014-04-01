@@ -1,6 +1,9 @@
 class LocosController < ApplicationController
   # GET /locos
   # GET /locos.json
+    before_filter :authenticate, :only => [:edit, :update,:index,:new]
+    before_filter :correct_user, :only => [:edit, :update]
+
   def index
     @locos = Loco.all
 
@@ -80,4 +83,15 @@ class LocosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+  def authenticate
+    deny_access unless signed_in?
+  end
+  
+  def correct_user
+    @user = User.find(params[:id])
+    redirect_to(root_path) unless current_user=(@user)
+  end
+
 end

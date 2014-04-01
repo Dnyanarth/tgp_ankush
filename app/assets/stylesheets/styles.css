@@ -514,7 +514,7 @@ table { width: 100%; margin-bottom: 1.25em; /* 20/16 */ }
 
 	/* Push the first cell to the right so it doesn't stick to the table border */
 	table td:first-child, table th:first-child {
-		width: 4em /* 48/12 */;
+		width: 8em /* 48/12 */;
 		text-align: center;
 		padding: 0;
 		border: none;
@@ -522,7 +522,7 @@ table { width: 100%; margin-bottom: 1.25em; /* 20/16 */ }
 	}
 	
 	table td:last-child, table th:last-child {
-		width: 7em; /* 84/12 */
+		width: 15em; /* 84/12 */
 		text-align: center;
 		padding: 0;
 	}
