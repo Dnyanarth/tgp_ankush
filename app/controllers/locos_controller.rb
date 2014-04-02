@@ -2,7 +2,7 @@ class LocosController < ApplicationController
   # GET /locos
   # GET /locos.json
     before_filter :authenticate, :only => [:edit, :update,:index,:new]
-    before_filter :correct_user, :only => [:edit, :update]
+   
 
   def index
     @locos = Loco.all
