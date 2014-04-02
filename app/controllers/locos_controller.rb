@@ -63,7 +63,7 @@ class LocosController < ApplicationController
 
     respond_to do |format|
       if @loco.update_attributes(params[:loco])
-        format.html { redirect_to @loco, notice: 'Loco was successfully updated.' }
+        format.html { redirect_to locos_path, notice: 'Loco was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
